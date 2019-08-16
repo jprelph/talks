@@ -1,0 +1,13 @@
+
+docker build -t gobig -f DockerfileGo .
+docker run -t gobig
+
+docker build -t goalpine -f DockerfileAlpine .
+docker run -t goalpine
+
+docker build -t gostatic -f DockerfileStatic .
+docker run -t gostatic
+
+goalpine                     latest              82c42ea55afe        About a minute ago   354MB
+gobig                        latest              b1bfadb33652        2 minutes ago        753MB
+static                       latest              0a21fcbe8076        6 minutes ago        3.16MB

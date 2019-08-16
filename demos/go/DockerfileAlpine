@@ -1,0 +1,8 @@
+FROM golang:1.12.1-alpine3.9
+
+RUN mkdir -p /go/src
+WORKDIR /go/src
+COPY count.go .
+RUN go build count.go
+RUN cp /go/src/count /count
+CMD ["/count"]

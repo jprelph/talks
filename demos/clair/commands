@@ -1,0 +1,4 @@
+docker start db
+docker start clair
+clair-scanner --ip "$(hostname)".local gobig
+clair-scanner --ip "$(hostname)".local goalpine
